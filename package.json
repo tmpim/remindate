@@ -1,0 +1,49 @@
+{
+  "name": "remindate",
+  "version": "1.0.0",
+  "description": "Parse natural language strings for recurring, absolute and relative reminder dates",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint",
+    "build": "tsc",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmpim/remindate.git"
+  },
+  "keywords": [
+    "reminder",
+    "remind",
+    "date",
+    "parse",
+    "parser",
+    "recurring",
+    "absolute",
+    "relative",
+    "human",
+    "natural",
+    "language"
+  ],
+  "author": "tmpim",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/tmpim/remindate/issues"
+  },
+  "homepage": "https://github.com/tmpim/remindate#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.13",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-tsdoc": "^0.2.10",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
