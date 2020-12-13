@@ -1,4 +1,4 @@
-import { DateTime, Zone } from "luxon";
+import { DateTime, Duration, Zone } from "luxon";
 
 export interface RecurringDate {
   type: "recurring";
@@ -8,11 +8,14 @@ export interface RecurringDate {
 export interface AbsoluteDate {
   type: "absolute";
   date: Date;
+  dateTime: DateTime;
 }
 
 export interface RelativeDate {
   type: "relative";
   date: Date;
+  dateTime: DateTime;
+  duration: Duration;
 }
 
 export interface RemindateOptions {
